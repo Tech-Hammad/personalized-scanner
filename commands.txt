@@ -1,0 +1,11 @@
+sudo apt update
+sudo apt install -y flex g++
+flex scanner.l
+g++ lex.yy.c -o scanner
+
+./scanner valid_test.txt
+./scanner invalid_test.txt
+
+  cat tokens.txt
+cat errors.txt
+cat summary.txt
