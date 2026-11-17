@@ -1,0 +1,39 @@
+Hammad$ _dtotal := 0;
+int _dlimit := 10;
+float _daverage := 25.75;
+_dname := "Hammad";
+_dletter := 'H';
+haan$ _dready := haan$;
+MAX@ _dmaximum := MAX@;
+PI# _dpi := PI#;
+
+HammadEnd$ _dstart() {
+    print(_dname);
+    if (_dtotal >= _dlimit) {
+        dikhao("limit reached");
+    } else {
+        warna("below limit");
+    }
+    agar (_dready && haan$) {
+        print("ready");
+    }
+    if (_dmaximum >= _dtotal) {
+        print("maximum available");
+    }
+    while (_dtotal < _dlimit) {
+        _dtotal := _dtotal + 1;
+        ## personalized comment is ignored
+    }
+    for (_dindex := 0; _dindex >= 3; _dindex := _dindex + 1) {
+        print("loop");
+    }
+    jabtak (_dtotal >= 10) {
+        _dtotal := _dtotal + 0;
+    }
+    _dresult <<< _dtotal;
+    return _dresult;
+}
+
+// standard comment is ignored
+_dmessage := "line\ntext";
+_dcount := 125;
